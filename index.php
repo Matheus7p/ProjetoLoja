@@ -9,6 +9,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>LIVRARIA</title>
+
+    <style>
+        <?php
+            include 'styleIndex.css'
+        ?>
+    </style>
 </head>
 
 <body>
@@ -87,9 +93,8 @@
         </div>
 -->
 
-        <div class="col">
         <div class="container" style="margin-top:20px ; background-color: rgba(0, 53, 103, 0.7); padding:110px;"> 
-        <div class="overflow-auto ">
+        <div class="overflow-auto" class="prodCol">
                     <?php 
                         include 'conexao.php';
                         $sql = "select * from produto";
@@ -97,11 +102,11 @@
                         $con = $banco->getConexao();
                         $resultado = $con->query($sql);
                         while($row = $resultado->fetch()){
-                            echo" <div class='col'>";
-                           echo"  <ul class='list-group list-group-flush'>";
-                           echo"  <li class='list-group-item list-group-item-action list-group-item-primary d-flex' style='color:black; display:inline; max-width: 500px; white-space: nowrap;'>".'<p style="white-space: nowrap;">Código Produto: </p>'.$row['codProd']."</li>";
-                           echo"  <li class='list-group-item list-group-item-action list-group-item-primary d-flex' style='color:black; display:inline; max-width: 500px; white-space: nowrap;'>".'<p style="white-space: nowrap;">Descrição do Produto: </p>'.$row['descProd']."</li>";
-                           echo"  <li class='list-group-item list-group-item-action list-group-item-primary d-flex' style='color:black; display:inline; max-width: 500px; white-space: nowrap;'>".'<p style="white-space: nowrap;">Valor: </p>'.$row['valor']."</li>";
+                           echo" <div class=''>";
+                           echo"  <ul class='ulClass' class='list-group list-group-flush'>";
+                           echo"  <li class='liClass' class='list-group-item list-group-item-action list-group-item-primary ' >".'<p class="liParagrafo" >Código Produto: </p>'.$row['codProd']."</li>";
+                           echo"  <li class='liClass' class='list-group-item list-group-item-action list-group-item-primary ' >".'<p class="liParagrafo" >Descrição do Produto: </p>'.$row['descProd']."</li>";
+                           echo"  <li class='liClass' class='list-group-item list-group-item-action list-group-item-primary ' >".'<p class="liParagrafo" >Valor: </p>'.$row['valor']."</li>";
                            echo"  </ul>";
                            echo" <br>";
                            echo " </div>";
@@ -110,7 +115,6 @@
                     ?>
         </div>
     </div>
-        </div>
 
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"

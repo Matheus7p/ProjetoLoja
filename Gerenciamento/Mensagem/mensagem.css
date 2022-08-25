@@ -1,8 +1,13 @@
-.inputMensg{
-
-}
 
 #titleMensagem{
     color: white;
     align-items: center;
+}
+
+.container{
+    box-shadow: 5px;  
+}
+
+#containerRec{
+  
 }

@@ -1,7 +1,7 @@
 <?php
 include "../../conexao.php";
 class produtoDAO{
-    private $codProd, $descProd, $valor ;
+    private $codProd, $descProd, $valor;
 
     public function getCodProd(){
         return $this->codProd;
@@ -26,7 +26,9 @@ class produtoDAO{
 
 
     public function cadastrarNvP(){
-        $sql = 'insert into produto (codProd, descProd, valor) values (?,?,?)';
+
+
+        $sql = 'insert into produto (codProd, descProd, valor ) values (?,?,?)';
 
         $banco = new conexao();
         $con = $banco->getConexao();

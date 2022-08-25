@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleIndex.css">
     <link rel="stylesheet" href="mensagem.php">
+    <style>
+        <?php
+        include 'mensagem.css';
+        ?>
+        </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Livraria</title>
@@ -45,7 +50,7 @@
     </nav>
 
     <br>
-    <div class="container" style="background-color: #004280; padding: 90px;">
+    <div class="container" id="containerRec" style="background-color: rgba(0, 53, 103, 0.7); padding: 90px;">
         <h1 id="titleMensagem" style="color: white; margin-left: 400px; margin-bottom: 50px; "><b>Reclame Aqui</b></h1>
         <form action="controleMensagem.php" method="GET">
         <div class="mb-3">

@@ -1,8 +1,21 @@
-.listProd1{
-    background-color: #004280;
+.liClass{
+    color: white; 
+    display:inline; 
+    max-width: 500px; 
+    white-space: nowrap;
+    border-bottom: 3px white;
+    display: flex;
+    border: 3px white;
 }
 
+.liParagrafo{
+    white-space: nowrap;
+}
 
-.paragrafoProd{
-    color: aqua;
+.prodCol{
+    border: 3px white;
+}
+
+.ulClass{
+    border: 3px white;
 }

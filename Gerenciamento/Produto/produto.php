@@ -68,7 +68,7 @@
 <br>
     <div class="container" style="background-color: rgba(0, 53, 103, 0.7); padding: 90px;">
         <h1 id="titleMensagem" style="color: white; margin-left: 400px; margin-bottom: 50px; "><b>Cadastrar Produto</b></h1>
-        <form action="controleProduto.php" method="GET">
+        <form action="controleProduto.php" method="GET" enctype="multipart/form-data">
             <div class="mb-3">
                 <input type="number" class="inputCadProd" name="codProd" placeholder="Codigo do Produto">
             </div>
@@ -78,7 +78,10 @@
             <div class="mb-3">
                 <input type="number" name="valor" class="inputCadProd" placeholder="Valor do Produto">
             </div>
-            <div class="row m-auto">
+            <div class="mb-3">
+                <input type="file" name="arquivo">
+            </div>
+            <div class="row m-auto"  >
                 <button type="submit" class="btn btn-outline-light" style="font: size 20px;" value="enviar"
                     name="botao">Enviar</button>
             </div>
