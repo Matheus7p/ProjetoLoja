@@ -27,7 +27,7 @@
                     <div class="col"></div>
                     <div class="col"></div>
                     <div class="col"></div>
-                    <a class="btn btn-outline-light" href="mensagem.php" tabindex="-1" aria-disabled="true"><b>Reclame
+                    <a class="btn btn-outline-light" href="Gerenciamento/Mensagem/mensagem.php" tabindex="-1" aria-disabled="true"><b>Reclame
                             Aqui</b></a>
                     <a class="btn btn-outline-light" href="gerenciamento.php" tabindex="-1" aria-disabled="true"
                         style="margin-left: 15px;"><b>Gerenciamento</b></a>
@@ -42,7 +42,7 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <!--<div class="container">
         <div class="col">
             <div class="col"></div>
             <div class="col"></div>
@@ -85,6 +85,33 @@
             </div>
             <div class="col"></div>
         </div>
+-->
+
+        <div class="col">
+        <div class="container" style="margin-top:20px ; background-color: rgba(0, 53, 103, 0.7); padding:110px;"> 
+        <div class="overflow-auto ">
+                    <?php 
+                        include 'conexao.php';
+                        $sql = "select * from produto";
+                        $banco = new conexao();
+                        $con = $banco->getConexao();
+                        $resultado = $con->query($sql);
+                        while($row = $resultado->fetch()){
+                            echo" <div class='col'>";
+                           echo"  <ul class='list-group list-group-flush'>";
+                           echo"  <li class='list-group-item list-group-item-action list-group-item-primary d-flex' style='color:black; display:inline; max-width: 500px; white-space: nowrap;'>".'<p style="white-space: nowrap;">Código Produto: </p>'.$row['codProd']."</li>";
+                           echo"  <li class='list-group-item list-group-item-action list-group-item-primary d-flex' style='color:black; display:inline; max-width: 500px; white-space: nowrap;'>".'<p style="white-space: nowrap;">Descrição do Produto: </p>'.$row['descProd']."</li>";
+                           echo"  <li class='list-group-item list-group-item-action list-group-item-primary d-flex' style='color:black; display:inline; max-width: 500px; white-space: nowrap;'>".'<p style="white-space: nowrap;">Valor: </p>'.$row['valor']."</li>";
+                           echo"  </ul>";
+                           echo" <br>";
+                           echo " </div>";
+
+                        }
+                    ?>
+        </div>
+    </div>
+        </div>
+
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">

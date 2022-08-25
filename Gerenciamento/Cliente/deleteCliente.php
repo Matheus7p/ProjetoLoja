@@ -1,8 +1,8 @@
 <?php
 
  if(!empty($_GET['codCliente'])){
-        include_once('conexao.php');
-        include_once('testeconexao.php');
+        include_once('../../conexao.php');
+        include_once('../../testeconexao.php');
 
         $id = $_GET['codCliente'];
         $sqlSelect = "SELECT * FROM cliente WHERE codCliente =$id";
@@ -12,6 +12,6 @@
             $sqlDelete = "DELETE FROM cliente WHERE codCliente=$id";
             $resultDelete = $conexaoTeste->query($sqlDelete);
         }
-    } header('cliente.php');
+    } header('location: cliente.php');
 
 ?>

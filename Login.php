@@ -27,7 +27,7 @@
                     <div class="col"></div>
                     <div class="col"></div>
                     <div class="col"></div>
-                    <a class="btn btn-outline-light" href="mensagem.php" tabindex="-1" aria-disabled="true" ><b>Reclame Aqui</b></a>
+                    <a class="btn btn-outline-light" href="Gerenciamento/Mensagem/mensagem.php" tabindex="-1" aria-disabled="true" ><b>Reclame Aqui</b></a>
                     <a class="btn btn-outline-light" href="gerenciamento.php" tabindex="-1" aria-disabled="true"
                         style="margin-left: 15px;"><b>Gerenciamento</b></a>
                     <a class="btn btn-outline-light" aria-current="page" href="Login.php"
@@ -58,7 +58,7 @@
             <div class="col" id="divCadastro" style="background-color: rgba(0, 53, 103, 0.7); padding: 160px;">
                 <h3 class="titleLogin"><b>CADASTRAR</b></h3>
                 <br>
-                <form method="GET" action="controleCliente.php" autocomplete="off">
+                <form method="GET" action="Gerenciamento/Cliente/controleCliente.php" autocomplete="off">
                     <div class="form-floating mb-3 mt-3">
                         <input type="number" class="inputCad" placeholder="Digite o cpf" required name="cpf"
                             style="outline: none;">

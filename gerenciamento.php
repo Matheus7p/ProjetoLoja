@@ -27,7 +27,7 @@
                     <div class="col"></div>
                     <div class="col"></div>
                     <div class="col"></div>
-                    <a class="btn btn-outline-light" href="mensagem.php" tabindex="-1" aria-disabled="true" ><b>Reclame Aqui</b></a>
+                    <a class="btn btn-outline-light" href="Gerenciamento/Mensagem/mensagem.php" tabindex="-1" aria-disabled="true" ><b>Reclame Aqui</b></a>
                     <a class="btn btn-outline-light" href="gerenciamento.php" tabindex="-1" aria-disabled="true" style="margin-left: 15px;"><b>Gerenciamento</b></a>
                     <a class=" btn btn-outline-light" aria-current="page" href="Login.php"
                         style="margin-left: 15px;"><b>Login</b></a>
@@ -46,17 +46,17 @@
         <div class="col"></div>
             <div class="col">
                 <li class="nav-item">
-                    <a class="btn btn-outline-light" aria-current="page" href="produto.php"><b>Produto</b></a>
+                    <a class="btn btn-outline-light" aria-current="page" href="Gerenciamento/Produto/produto.php"><b>Produto</b></a>
                 </li>
             </div>
             <div class="col">
                 <li class="nav-item">
-                    <a class="btn btn-outline-light" href="cliente.php"><b>Clientes</b></a>
+                    <a class="btn btn-outline-light" href="Gerenciamento/Cliente/cliente.php"><b>Clientes</b></a>
                 </li>
             </div>
             <div class="col">
                 <li class="nav-item">
-                    <a class="btn btn-outline-light" href="genMensagem.php"><b>Mensagens</b></a>
+                    <a class="btn btn-outline-light" href="Gerenciamento/Mensagem/genMensagem.php"><b>Mensagens</b></a>
                 </li>
             </div>
         </ul>

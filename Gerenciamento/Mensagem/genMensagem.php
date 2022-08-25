@@ -16,7 +16,7 @@
 
     <nav class="navbar navbar-expand-lg" style="background-color: #004280;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.php" style="color: white;"><b>LIVRARIA</b></a>
+            <a class="navbar-brand" href="../../index.php" style="color: white;"><b>LIVRARIA</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -28,8 +28,8 @@
                     <div class="col"></div>
                     <div class="col"></div> 
                     <a class="btn btn-outline-light" href="mensagem.php" tabindex="-1" aria-disabled="true" ><b>Reclame Aqui</b></a>
-                    <a class="btn btn-outline-light" href="gerenciamento.php" tabindex="-1" aria-disabled="true" style="margin-left: 15px;"><b>Gerenciamento</b></a>
-                    <a class=" btn btn-outline-light" aria-current="page" href="Login.php"
+                    <a class="btn btn-outline-light" href="../../gerenciamento.php" tabindex="-1" aria-disabled="true" style="margin-left: 15px;"><b>Gerenciamento</b></a>
+                    <a class=" btn btn-outline-light" aria-current="page" href="../../Login.php"
                         style="margin-left: 15px;"><b>Login</b></a>
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
@@ -46,17 +46,17 @@
         <div class="col"></div>
             <div class="col">
                 <li class="nav-item">
-                    <a class="btn btn-outline-light" aria-current="page" href="produto.php"><b>Produto</b></a>
+                    <a class="btn btn-outline-light" aria-current="page" href="../Produto/produto.php"><b>Produto</b></a>
                 </li>
             </div>
             <div class="col">
                 <li class="nav-item">
-                    <a class="btn btn-outline-light" href="cliente.php"><b>Clientes</b></a>
+                    <a class="btn btn-outline-light" href="../Cliente/cliente.php"><b>Clientes</b></a>
                 </li>
             </div>
             <div class="col">
                 <li class="nav-item">
-                    <a class="btn btn-outline-light" href="mensagem.php"><b>Mensagens</b></a>
+                    <a class="btn btn-outline-light" href="genMensagem.php"><b>Mensagens</b></a>
                 </li>
             </div>
         </ul>
@@ -74,7 +74,7 @@
                 </thead>
                 <tbody>
                     <?php 
-                        include 'conexao.php';
+                        include '../../conexao.php';
                         $sql = "select * from mensagem";
                         $banco = new conexao();
                         $con = $banco->getConexao();
@@ -100,7 +100,7 @@
                             <div class='modal-dialog'>
                               <div class='modal-content'>
                                 <div class='modal-header'>
-                                  <h5 class='modal-title' id='staticBackdropLabel'>Excluir Cesta</h5>
+                                  <h5 class='modal-title' id='staticBackdropLabel'>Excluir Mensagem</h5>
                                   <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
                                 </div>
                                 <div class='modal-body'>

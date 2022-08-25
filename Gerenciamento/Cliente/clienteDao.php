@@ -1,5 +1,5 @@
 <?php
-include 'conexao.php';
+include '../../conexao.php';
 
 class clienteDao{
    private $cpf, $nomeCliente, $cidade, $genero;
@@ -47,7 +47,7 @@ class clienteDao{
        if($final){
            echo "<script LANGUAGE= 'JavaScript'>
                window.alert('Cadastrado com sucesso');
-               window.location.href='cadastrarCliente.php';
+               window.location.href='../../index.php';
                </script>";
        }
    }

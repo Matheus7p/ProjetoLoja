@@ -1,5 +1,5 @@
 <?php
-include "conexao.php";
+include "../../conexao.php";
 class produtoDAO{
     private $codProd, $descProd, $valor ;
 
@@ -44,7 +44,7 @@ class produtoDAO{
         }
     }
     public function deletarNvP(){
-        $sql1 = 'delete from produto where codProd = ?';
+        $sql1 = 'delete from produto where codProd =?';
         $banco = new conexao();
         $con = $banco->getConexao();
         $resultado = $con->prepare($sql1);

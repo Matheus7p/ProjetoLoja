@@ -1,5 +1,5 @@
 <?php
-include "conexao.php";
+include "../../conexao.php";
 class mensagemDAO{
     private $assunto, $obs, $mensagemdata;
 
@@ -38,7 +38,7 @@ class mensagemDAO{
         if($final){
             echo "<script LANGUAGE= 'JavaScript'>
                 window.alert('Cadastrado com sucesso');
-                window.location.href='faleConosco.php';
+                window.location.href='mensagem.php';
                 </script>";
         }
     }
