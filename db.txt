@@ -5,8 +5,9 @@ create table produto(
 codProd int primary key auto_increment,
 descProd varchar(90) not null,
 valor decimal(5,2) not null,
-imgProd int not null
+imagem blob
 );
+
 create table cliente(
 codCliente int primary key auto_increment,
 cpf varchar(11) not null,
@@ -26,8 +27,8 @@ mensagemdata date
 
 
 select * from cliente;
-
+select * from produto;
 
 drop database loja;
-drop table cliente;
+drop table produto;
 
