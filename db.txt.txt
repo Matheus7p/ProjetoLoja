@@ -1,0 +1,33 @@
+create database loja;
+use loja;
+
+create table produto(
+codProd int primary key auto_increment,
+descProd varchar(90) not null,
+valor decimal(5,2) not null,
+imgProd int not null
+);
+create table cliente(
+codCliente int primary key auto_increment,
+cpf varchar(11) not null,
+cidade varchar(90) not null,
+genero char,
+nomeCliente varchar(100) not null
+);
+
+Create table mensagem(
+codMensagem int primary key auto_increment,
+assunto varchar(200) not null,
+obs varchar(200) not null,
+mensagemdata date
+);
+
+
+
+
+select * from cliente;
+
+
+drop database loja;
+drop table cliente;
+

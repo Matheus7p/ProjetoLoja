@@ -1,0 +1,29 @@
+#indetificacao{
+    color: #003567;
+    align-items: center;
+    margin-left: 45%;
+}
+  
+.titleLogin{
+   font-size: 30px;
+   color: white;
+}
+
+#linha-vertical {
+    height: 700px;
+    border-right: 3px solid #004280;
+}
+
+.inputCad{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    size: 250px;
+    color: white;
+    background-color: rgba(0, 53, 103, 0);
+}
+
+.inputCad::placeholder{
+    color: white;
+}
+

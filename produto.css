@@ -1,0 +1,15 @@
+input::placeholder{
+    color: white;
+}
+
+.inputCadProd{
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background-color: #004280;
+    size: 100px;
+    color: white;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
